@@ -5,5 +5,8 @@
 [build.environment]
   NODE_VERSION = "20"        # Or any other Node version that works with your setup
 
+[build.commands]
+  postinstall = "npm install"
+  
 [context.production.environment]
   NODE_ENV = "production"
