@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"  # Command to build your project
+  publish = "dist"           # Directory to publish after the build
+
+[build.environment]
+  NODE_VERSION = "20"        # Or any other Node version that works with your setup
+
+[context.production.environment]
+  NODE_ENV = "production"
